@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Diamond Rings Displayed]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25505" started-at="2017-11-17T12:45:33Z" finished-at="2017-11-17T12:45:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25505" started-at="2017-11-17T12:45:33Z" finished-at="2017-11-17T12:45:59Z">
+      <class name="com.caratlane.test.DiamondRings">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:com.caratlane.test.DiamondRings@4883b407]" name="openApp" is-config="true" duration-ms="7557" started-at="2017-11-17T18:15:33Z" finished-at="2017-11-17T18:15:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="verifyDiamondRings()[pri:0, instance:com.caratlane.test.DiamondRings@4883b407]" name="verifyDiamondRings" duration-ms="16578" started-at="2017-11-17T18:15:41Z" finished-at="2017-11-17T18:15:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Diamond Rings Displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyDiamondRings -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.caratlane.test.DiamondRings@4883b407]" name="closeApp" is-config="true" duration-ms="0" started-at="2017-11-17T18:15:59Z" finished-at="2017-11-17T18:15:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.caratlane.test.DiamondRings -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
