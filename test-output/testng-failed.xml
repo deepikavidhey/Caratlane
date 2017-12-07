@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.caratlane.test.DiamondRings">
+      <class name="com.caratlane.test.GemstoneRings">
         <methods>
           <include name="openApp"/>
-          <include name="verifyDiamondRings"/>
+          <include name="verifyGemstoneRings"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- com.caratlane.test.DiamondRings -->
+      </class> <!-- com.caratlane.test.GemstoneRings -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

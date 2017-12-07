@@ -1,6 +1,7 @@
 package generic;
 
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,6 +14,9 @@ import org.testng.annotations.Listeners;
 public class BaseTest implements IAutoConst
 {
 	public static WebDriver driver;
+	
+	
+	
 	static
 	{
 	System.setProperty(CHROME_KEY,CHROME_VALUE);
@@ -21,8 +25,11 @@ public class BaseTest implements IAutoConst
 	@BeforeMethod
 	public void openApp()
 	{
-	/*ChromeOptions co=new ChromeOptions();
-	co.addArguments("---disable-Notifications");*/
+		/*ChromeOptions co=new ChromeOptions();
+		co.addArguments("---disable-Notifications");*/
+	
+		Logger log=Logger.getLogger("logger.log");
+		log.info("-------Opening the browser------");
 	driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -33,7 +40,9 @@ public class BaseTest implements IAutoConst
 	@AfterMethod
 	public void closeApp()
 	{
+		
 		driver.quit();
+		//log.info("closing the browser");
 	}	
 	
 }

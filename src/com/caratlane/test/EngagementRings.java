@@ -9,7 +9,7 @@ import generic.BaseTest;
 
 public class EngagementRings extends BaseTest
 {
-	@Test
+	@Test(groups={"Smoke","User"})
 	void verifyEngagementRings()
 	{
 		HomePage hp=new HomePage(driver);

@@ -17,7 +17,7 @@ public class VerifyBangleDetails extends BaseTest
 		
 		GoldBanglePage gbp=new GoldBanglePage(driver);
 		gbp.clickBangle(driver);
-		
+	
 	}
 	
 }

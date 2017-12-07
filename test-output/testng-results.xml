@@ -2,30 +2,30 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[Diamond Rings Displayed]]>
+      <![CDATA[Title is matching]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25505" started-at="2017-11-17T12:45:33Z" finished-at="2017-11-17T12:45:59Z">
+  <suite name="Default suite" duration-ms="30754" started-at="2017-11-30T09:17:42Z" finished-at="2017-11-30T09:18:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25505" started-at="2017-11-17T12:45:33Z" finished-at="2017-11-17T12:45:59Z">
-      <class name="com.caratlane.test.DiamondRings">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:com.caratlane.test.DiamondRings@4883b407]" name="openApp" is-config="true" duration-ms="7557" started-at="2017-11-17T18:15:33Z" finished-at="2017-11-17T18:15:41Z">
+    <test name="Default test" duration-ms="30754" started-at="2017-11-30T09:17:42Z" finished-at="2017-11-30T09:18:12Z">
+      <class name="com.caratlane.test.VerifyBangleDetails">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:com.caratlane.test.VerifyBangleDetails@39c0f4a]" name="openApp" is-config="true" duration-ms="8653" started-at="2017-11-30T14:47:42Z" finished-at="2017-11-30T14:47:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="verifyDiamondRings()[pri:0, instance:com.caratlane.test.DiamondRings@4883b407]" name="verifyDiamondRings" duration-ms="16578" started-at="2017-11-17T18:15:41Z" finished-at="2017-11-17T18:15:57Z">
+        <test-method status="PASS" signature="VerifyGoldBangles()[pri:0, instance:com.caratlane.test.VerifyBangleDetails@39c0f4a]" name="VerifyGoldBangles" duration-ms="21204" started-at="2017-11-30T14:47:50Z" finished-at="2017-11-30T14:48:12Z">
           <reporter-output>
             <line>
-              <![CDATA[Diamond Rings Displayed]]>
+              <![CDATA[Title is matching]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verifyDiamondRings -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.caratlane.test.DiamondRings@4883b407]" name="closeApp" is-config="true" duration-ms="0" started-at="2017-11-17T18:15:59Z" finished-at="2017-11-17T18:15:59Z">
+        </test-method> <!-- VerifyGoldBangles -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.caratlane.test.VerifyBangleDetails@39c0f4a]" name="closeApp" is-config="true" duration-ms="123" started-at="2017-11-30T14:48:12Z" finished-at="2017-11-30T14:48:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.caratlane.test.DiamondRings -->
+      </class> <!-- com.caratlane.test.VerifyBangleDetails -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
