@@ -8,11 +8,33 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">30,754</td><td></td><td></td></tr>
+<tr><th colspan="7">Currency</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">180,509</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.caratlane.test.VerifyBangleDetails</td><td><a href="#m0">VerifyGoldBangles</a></td><td rowspan="1">1512033470798</td><td rowspan="1">21204</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Currency</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.caratlane.test.USCurrencyVerify</td><td><a href="#m0">USCurrency</a></td><td rowspan="1">1512622616963</td><td rowspan="1">23637</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.caratlane.test.AustralianCurrencyVerify</td><td><a href="#m1">australianCurrency</a></td><td rowspan="1">1512622580512</td><td rowspan="1">29724</td></tr><tr class="passedodd"><td rowspan="1">com.caratlane.test.IndianCurrencyCheck</td><td><a href="#m2">verifyIndianCurrency</a></td><td rowspan="1">1512622750151</td><td rowspan="1">3375</td></tr><tr class="passedeven"><td rowspan="1">com.caratlane.test.VerifyCanadianCurrency</td><td><a href="#m3">canadianCurrency</a></td><td rowspan="1">1512622697681</td><td rowspan="1">48747</td></tr><tr class="passedodd"><td rowspan="1">com.caratlane.test.VerifyUKCurrency</td><td><a href="#m4">ukCurrency</a></td><td rowspan="1">1512622644758</td><td rowspan="1">48802</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.caratlane.test.VerifyBangleDetails#VerifyGoldBangles</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matching</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.caratlane.test.USCurrencyVerify#USCurrency</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;div class=&quot;country_box&quot; id=&quot;en_US&quot;&gt;...&lt;/div&gt; is not clickable at point (543, 453). Other element would receive the click: &lt;iframe style=&quot;position: fixed; display: block; bottom: auto; text-align: left; z-index: 2147483647; background-color: rgba(230, 239, 255, 0.01); overflow: hidden; border: 1px solid rgba(0, 153, 255, 0); height: 515px; box-sizing: content-box; width: 680px; top: 50%; left: 50%; right: auto; margin-top: -257.5px; margin-left: -340px; visibility: visible;&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; frameborder=&quot;0&quot; id=&quot;__ta_notif_frame_1&quot; src=&apos;javascript:parent._taq.$(&quot;#__ta_notif_frame_1&quot;).data(&quot;srchtml&quot;)&apos;&gt;&lt;/iframe&gt;
+  (Session info: chrome=60.0.3112.113)
+  (Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 4.10.0-40-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 81 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;QSP-029&apos;, ip: &apos;198.105.254.11&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-40-generic&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4), userDataDir=/tmp/.org.chromium.Chromium.gAtnuJ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: d8ac3ad2d100004db937ba242143786c
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.caratlane.page.HomePage.checkUSCurrency(HomePage.java:102)
+	at com.caratlane.test.USCurrencyVerify.USCurrency(USCurrencyVerify.java:16)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.caratlane.test.AustralianCurrencyVerify#australianCurrency</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verified currency AUD for Australia</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.caratlane.test.IndianCurrencyCheck#verifyIndianCurrency</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verified currency INR for India</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.caratlane.test.VerifyCanadianCurrency#canadianCurrency</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verified currency CAD for Canada</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.caratlane.test.VerifyUKCurrency#ukCurrency</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verified currency GBP for United Kingdom</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

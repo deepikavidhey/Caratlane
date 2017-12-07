@@ -1,31 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
     <line>
-      <![CDATA[Title is matching]]>
+      <![CDATA[Verified currency AUD for Australia]]>
+    </line>
+    <line>
+      <![CDATA[Verified currency GBP for United Kingdom]]>
+    </line>
+    <line>
+      <![CDATA[Verified currency CAD for Canada]]>
+    </line>
+    <line>
+      <![CDATA[Verified currency INR for India]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30754" started-at="2017-11-30T09:17:42Z" finished-at="2017-11-30T09:18:12Z">
+  <suite name="Currency" duration-ms="180509" started-at="2017-12-07T04:56:13Z" finished-at="2017-12-07T04:59:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30754" started-at="2017-11-30T09:17:42Z" finished-at="2017-11-30T09:18:12Z">
-      <class name="com.caratlane.test.VerifyBangleDetails">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:com.caratlane.test.VerifyBangleDetails@39c0f4a]" name="openApp" is-config="true" duration-ms="8653" started-at="2017-11-30T14:47:42Z" finished-at="2017-11-30T14:47:50Z">
+    <test name="Test" duration-ms="180509" started-at="2017-12-07T04:56:13Z" finished-at="2017-12-07T04:59:13Z">
+      <class name="com.caratlane.test.VerifyCanadianCurrency">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:com.caratlane.test.VerifyCanadianCurrency@548e7350]" name="openApp" is-config="true" duration-ms="3966" started-at="2017-12-07T10:28:13Z" finished-at="2017-12-07T10:28:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="VerifyGoldBangles()[pri:0, instance:com.caratlane.test.VerifyBangleDetails@39c0f4a]" name="VerifyGoldBangles" duration-ms="21204" started-at="2017-11-30T14:47:50Z" finished-at="2017-11-30T14:48:12Z">
+        <test-method status="PASS" signature="canadianCurrency()[pri:0, instance:com.caratlane.test.VerifyCanadianCurrency@548e7350]" name="canadianCurrency" duration-ms="48747" started-at="2017-12-07T10:28:17Z" finished-at="2017-12-07T10:29:06Z">
           <reporter-output>
             <line>
-              <![CDATA[Title is matching]]>
+              <![CDATA[Verified currency CAD for Canada]]>
             </line>
           </reporter-output>
-        </test-method> <!-- VerifyGoldBangles -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.caratlane.test.VerifyBangleDetails@39c0f4a]" name="closeApp" is-config="true" duration-ms="123" started-at="2017-11-30T14:48:12Z" finished-at="2017-11-30T14:48:12Z">
+        </test-method> <!-- canadianCurrency -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.caratlane.test.VerifyCanadianCurrency@548e7350]" name="closeApp" is-config="true" duration-ms="75" started-at="2017-12-07T10:29:06Z" finished-at="2017-12-07T10:29:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- com.caratlane.test.VerifyBangleDetails -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.caratlane.test.VerifyCanadianCurrency -->
+      <class name="com.caratlane.test.IndianCurrencyCheck">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:com.caratlane.test.IndianCurrencyCheck@1a968a59]" name="openApp" is-config="true" duration-ms="3550" started-at="2017-12-07T10:29:06Z" finished-at="2017-12-07T10:29:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="verifyIndianCurrency()[pri:0, instance:com.caratlane.test.IndianCurrencyCheck@1a968a59]" name="verifyIndianCurrency" duration-ms="3375" started-at="2017-12-07T10:29:10Z" finished-at="2017-12-07T10:29:13Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verified currency INR for India]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyIndianCurrency -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.caratlane.test.IndianCurrencyCheck@1a968a59]" name="closeApp" is-config="true" duration-ms="70" started-at="2017-12-07T10:29:13Z" finished-at="2017-12-07T10:29:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.caratlane.test.IndianCurrencyCheck -->
+      <class name="com.caratlane.test.VerifyUKCurrency">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:com.caratlane.test.VerifyUKCurrency@5442a311]" name="openApp" is-config="true" duration-ms="3774" started-at="2017-12-07T10:27:20Z" finished-at="2017-12-07T10:27:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="ukCurrency()[pri:0, instance:com.caratlane.test.VerifyUKCurrency@5442a311]" name="ukCurrency" duration-ms="48802" started-at="2017-12-07T10:27:24Z" finished-at="2017-12-07T10:28:13Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verified currency GBP for United Kingdom]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ukCurrency -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.caratlane.test.VerifyUKCurrency@5442a311]" name="closeApp" is-config="true" duration-ms="77" started-at="2017-12-07T10:28:13Z" finished-at="2017-12-07T10:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.caratlane.test.VerifyUKCurrency -->
+      <class name="com.caratlane.test.USCurrencyVerify">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:com.caratlane.test.USCurrencyVerify@53b32d7]" name="openApp" is-config="true" duration-ms="6138" started-at="2017-12-07T10:26:50Z" finished-at="2017-12-07T10:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="FAIL" signature="USCurrency()[pri:0, instance:com.caratlane.test.USCurrencyVerify@53b32d7]" name="USCurrency" duration-ms="23637" started-at="2017-12-07T10:26:56Z" finished-at="2017-12-07T10:27:20Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <div class="country_box" id="en_US">...</div> is not clickable at point (543, 453). Other element would receive the click: <iframe style="position: fixed; display: block; bottom: auto; text-align: left; z-index: 2147483647; background-color: rgba(230, 239, 255, 0.01); overflow: hidden; border: 1px solid rgba(0, 153, 255, 0); height: 515px; box-sizing: content-box; width: 680px; top: 50%; left: 50%; right: auto; margin-top: -257.5px; margin-left: -340px; visibility: visible;" marginheight="0" marginwidth="0" frameborder="0" id="__ta_notif_frame_1" src='javascript:parent._taq.$("#__ta_notif_frame_1").data("srchtml")'></iframe>
+  (Session info: chrome=60.0.3112.113)
+  (Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 4.10.0-40-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 81 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'QSP-029', ip: '198.105.254.11', os.name: 'Linux', os.arch: 'amd64', os.version: '4.10.0-40-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4), userDataDir=/tmp/.org.chromium.Chromium.gAtnuJ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: d8ac3ad2d100004db937ba242143786c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <div class="country_box" id="en_US">...</div> is not clickable at point (543, 453). Other element would receive the click: <iframe style="position: fixed; display: block; bottom: auto; text-align: left; z-index: 2147483647; background-color: rgba(230, 239, 255, 0.01); overflow: hidden; border: 1px solid rgba(0, 153, 255, 0); height: 515px; box-sizing: content-box; width: 680px; top: 50%; left: 50%; right: auto; margin-top: -257.5px; margin-left: -340px; visibility: visible;" marginheight="0" marginwidth="0" frameborder="0" id="__ta_notif_frame_1" src='javascript:parent._taq.$("#__ta_notif_frame_1").data("srchtml")'></iframe>
+  (Session info: chrome=60.0.3112.113)
+  (Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 4.10.0-40-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 81 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'QSP-029', ip: '198.105.254.11', os.name: 'Linux', os.arch: 'amd64', os.version: '4.10.0-40-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4), userDataDir=/tmp/.org.chromium.Chromium.gAtnuJ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: d8ac3ad2d100004db937ba242143786c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.caratlane.page.HomePage.checkUSCurrency(HomePage.java:102)
+	at com.caratlane.test.USCurrencyVerify.USCurrency(USCurrencyVerify.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- USCurrency -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.caratlane.test.USCurrencyVerify@53b32d7]" name="closeApp" is-config="true" duration-ms="151" started-at="2017-12-07T10:27:20Z" finished-at="2017-12-07T10:27:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.caratlane.test.USCurrencyVerify -->
+      <class name="com.caratlane.test.AustralianCurrencyVerify">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:com.caratlane.test.AustralianCurrencyVerify@343f4d3d]" name="openApp" is-config="true" duration-ms="7326" started-at="2017-12-07T10:26:13Z" finished-at="2017-12-07T10:26:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="australianCurrency()[pri:0, instance:com.caratlane.test.AustralianCurrencyVerify@343f4d3d]" name="australianCurrency" duration-ms="29724" started-at="2017-12-07T10:26:20Z" finished-at="2017-12-07T10:26:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verified currency AUD for Australia]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- australianCurrency -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.caratlane.test.AustralianCurrencyVerify@343f4d3d]" name="closeApp" is-config="true" duration-ms="81" started-at="2017-12-07T10:26:50Z" finished-at="2017-12-07T10:26:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.caratlane.test.AustralianCurrencyVerify -->
+    </test> <!-- Test -->
+  </suite> <!-- Currency -->
 </testng-results>

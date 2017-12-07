@@ -1,6 +1,7 @@
 package com.caratlane.test;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import com.caratlane.page.HomePage;
 

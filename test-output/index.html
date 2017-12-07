@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Currency">
+              <span class="suite-name border-failed">Currency</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Currency">
+                    <span>testng2.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-Currency">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-Currency">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-Currency">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Currency">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Currency">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Currency">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +91,50 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Currency" class="hide-methods failed suite-Currency"> (hide)</a> <!-- hide-methods failed suite-Currency -->
+                      <a href="#" panel-name="suite-Currency" class="show-methods failed suite-Currency"> (show)</a> <!-- show-methods failed suite-Currency -->
+                    </span>
+                    <div class="method-list-content failed suite-Currency">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Currency" title="com.caratlane.test.USCurrencyVerify" hash-for-method="USCurrency">USCurrency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Currency -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Currency" class="hide-methods passed suite-Currency"> (hide)</a> <!-- hide-methods passed suite-Currency -->
+                      <a href="#" panel-name="suite-Currency" class="show-methods passed suite-Currency"> (show)</a> <!-- show-methods passed suite-Currency -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Currency">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.caratlane.test.VerifyBangleDetails" hash-for-method="VerifyGoldBangles">VerifyGoldBangles</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Currency" title="com.caratlane.test.AustralianCurrencyVerify" hash-for-method="australianCurrency">australianCurrency</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Currency" title="com.caratlane.test.VerifyCanadianCurrency" hash-for-method="canadianCurrency">canadianCurrency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Currency" title="com.caratlane.test.VerifyUKCurrency" hash-for-method="ukCurrency">ukCurrency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Currency" title="com.caratlane.test.IndianCurrencyCheck" hash-for-method="verifyIndianCurrency">verifyIndianCurrency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Currency -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,127 +145,307 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Currency" class="panel Currency">
+          <div class="suite-Currency-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.caratlane.test.VerifyBangleDetails</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.caratlane.test.USCurrencyVerify</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyGoldBangles">
-                  </a> <!-- VerifyGoldBangles -->
-                  <span class="method-name">VerifyGoldBangles</span>
+                  <a name="USCurrency">
+                  </a> <!-- USCurrency -->
+                  <span class="method-name">USCurrency</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;div class=&quot;country_box&quot; id=&quot;en_US&quot;&gt;...&lt;/div&gt; is not clickable at point (543, 453). Other element would receive the click: &lt;iframe style=&quot;position: fixed; display: block; bottom: auto; text-align: left; z-index: 2147483647; background-color: rgba(230, 239, 255, 0.01); overflow: hidden; border: 1px solid rgba(0, 153, 255, 0); height: 515px; box-sizing: content-box; width: 680px; top: 50%; left: 50%; right: auto; margin-top: -257.5px; margin-left: -340px; visibility: visible;&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; frameborder=&quot;0&quot; id=&quot;__ta_notif_frame_1&quot; src=&apos;javascript:parent._taq.$(&quot;#__ta_notif_frame_1&quot;).data(&quot;srchtml&quot;)&apos;&gt;&lt;/iframe&gt;
+  (Session info: chrome=60.0.3112.113)
+  (Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 4.10.0-40-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 81 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;QSP-029&apos;, ip: &apos;198.105.254.11&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.10.0-40-generic&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4), userDataDir=/tmp/.org.chromium.Chromium.gAtnuJ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: d8ac3ad2d100004db937ba242143786c
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.caratlane.page.HomePage.checkUSCurrency(HomePage.java:102)
+	at com.caratlane.test.USCurrencyVerify.USCurrency(USCurrencyVerify.java:16)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Currency-class-failed -->
+          <div class="suite-Currency-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.caratlane.test.VerifyCanadianCurrency</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="canadianCurrency">
+                  </a> <!-- canadianCurrency -->
+                  <span class="method-name">canadianCurrency</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Currency-class-passed -->
+          <div class="suite-Currency-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.caratlane.test.AustralianCurrencyVerify</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="australianCurrency">
+                  </a> <!-- australianCurrency -->
+                  <span class="method-name">australianCurrency</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Currency-class-passed -->
+          <div class="suite-Currency-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.caratlane.test.VerifyUKCurrency</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ukCurrency">
+                  </a> <!-- ukCurrency -->
+                  <span class="method-name">ukCurrency</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Currency-class-passed -->
+          <div class="suite-Currency-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.caratlane.test.IndianCurrencyCheck</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIndianCurrency">
+                  </a> <!-- verifyIndianCurrency -->
+                  <span class="method-name">verifyIndianCurrency</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Currency-class-passed -->
+        </div> <!-- panel Currency -->
+        <div panel-name="test-xml-Currency" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse-715369276/testng-customsuite.xml</span>
+            <span class="header-content">/home/tyss/Desktop/CaratLane/CaratLane/testng2.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Currency&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.caratlane.test.VerifyBangleDetails&quot;/&gt;
+      &lt;class name=&quot;com.caratlane.test.AustralianCurrencyVerify&quot;/&gt;
+      &lt;class name=&quot;com.caratlane.test.USCurrencyVerify&quot;/&gt;
+      &lt;class name=&quot;com.caratlane.test.VerifyUKCurrency&quot;/&gt;
+      &lt;class name=&quot;com.caratlane.test.VerifyCanadianCurrency&quot;/&gt;
+      &lt;class name=&quot;com.caratlane.test.IndianCurrencyCheck&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Currency --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Currency" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Currency</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Currency" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Currency</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Currency" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Currency</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Currency');
+function tableData_Currency() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifyGoldBangles')
-data.setCell(0, 2, 'com.caratlane.test.VerifyBangleDetails')
-data.setCell(0, 3, 21204);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'ukCurrency')
+data.setCell(0, 2, 'com.caratlane.test.VerifyUKCurrency')
+data.setCell(0, 3, 48802);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'canadianCurrency')
+data.setCell(1, 2, 'com.caratlane.test.VerifyCanadianCurrency')
+data.setCell(1, 3, 48747);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'australianCurrency')
+data.setCell(2, 2, 'com.caratlane.test.AustralianCurrencyVerify')
+data.setCell(2, 3, 29724);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'USCurrency')
+data.setCell(3, 2, 'com.caratlane.test.USCurrencyVerify')
+data.setCell(3, 3, 23637);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyIndianCurrency')
+data.setCell(4, 2, 'com.caratlane.test.IndianCurrencyCheck')
+data.setCell(4, 3, 3375);
+window.suiteTableData['Currency']= { tableData: data, tableDiv: 'times-div-Currency'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Currency">
+              </div> <!-- times-div-Currency -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Currency" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Currency</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">VerifyGoldBangles</span>
+              <span class="reporter-method-name">verifyIndianCurrency</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Title is matching</span>
+                <span class="reporter-method-output">Verified currency INR for India</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">canadianCurrency</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verified currency CAD for Canada</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">australianCurrency</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verified currency AUD for Australia</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">ukCurrency</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verified currency GBP for United Kingdom</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Currency" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Currency" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.caratlane.test.VerifyBangleDetails</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.caratlane.test.AustralianCurrencyVerify</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openApp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">VerifyGoldBangles</span>
-                <span class="method-start">8653 ms</span>
+                <span class="method-name">australianCurrency</span>
+                <span class="method-start">7326 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">30582 ms</span>
+                <span class="method-start">37557 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.caratlane.test.USCurrencyVerify</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp</span>
+                <span class="method-start">37639 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">USCurrency</span>
+                <span class="method-start">43777 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">67646 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.caratlane.test.VerifyUKCurrency</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp</span>
+                <span class="method-start">67798 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ukCurrency</span>
+                <span class="method-start">71572 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">120450 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.caratlane.test.VerifyCanadianCurrency</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp</span>
+                <span class="method-start">120528 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">canadianCurrency</span>
+                <span class="method-start">124495 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">173339 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.caratlane.test.IndianCurrencyCheck</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp</span>
+                <span class="method-start">173415 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyIndianCurrency</span>
+                <span class="method-start">176965 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">180413 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
